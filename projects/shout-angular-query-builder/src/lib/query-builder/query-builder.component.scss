@@ -32,14 +32,14 @@
   }
 
   .q-add-icon {
-    color: #555;
+    color: var(--mat-sys-on-surface, #555);
     &::before {
       content: '➕'
     }
   }
 
   .q-remove-button {
-    color: #B3415D;
+    color: var(--mat-sys-error, #B3415D);
     width: 31px;
   }
 
@@ -55,7 +55,7 @@
   .q-button {
     margin-left: 8px;
     padding: 0 8px;
-    background-color: white;
+    background-color: var(--mat-sys-surface-container, white);
 
     &:disabled {
       display: none;
@@ -71,10 +71,10 @@
   .q-input-control, .q-operator-control, .q-field-control, .q-entity-control {
     display: inline-block;
     padding: 5px 8px;
-    color: #555;
-    background-color: #fff;
+    color: var(--mat-sys-on-surface, #555);
+    background-color: var(--mat-sys-surface-container, white);
     background-image: none;
-    border: 1px solid #ccc;
+    border: 1px solid var(--mat-sys-outline-variant, #ccc);
     border-radius: 4px;
     box-sizing: border-box;
     width: auto;
@@ -97,17 +97,18 @@
     font-weight: normal;
     text-align: center;
     text-shadow: none;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--mat-sys-outline, rgba(0, 0, 0, 0.2));
+    color: var(--mat-sys-on-surface, #555);
     box-sizing: border-box;
 
     &:hover {
       cursor: pointer;
-      background-color: #F0F0F0;
+      background-color: var(--mat-sys-surface-container-high, #F0F0F0);
     }
   }
 
   .q-switch-label {
-    background-color: #e4e4e4;
+    background-color: var(--mat-sys-surface-container-high, #e4e4e4);
     padding: 0 8px;
   }
 
@@ -120,9 +121,9 @@
     overflow: hidden;
 
     &:checked + .q-switch-label {
-      border: 1px solid rgb(97, 158, 215);
-      background: white;
-      color: rgb(49, 118, 179);
+      border: 1px solid var(--mat-sys-primary, rgb(97, 158, 215));
+      background: var(--mat-sys-surface-container, white);
+      color: var(--mat-sys-primary, rgb(49, 118, 179));
     }
 
     &:disabled + .q-switch-label {
@@ -138,22 +139,22 @@
   }
 
   .q-invalid-ruleset {
-    border: 1px solid rgba(179, 65, 93, 0.5) !important;
-    background: rgba(179, 65, 93, 0.1) !important;
+    border: 1px solid var(--mat-sys-error, rgba(179, 65, 93, 0.5)) !important;
+    background: var(--mat-sys-error-container, rgba(179, 65, 93, 0.1)) !important;
   }
 
   .q-empty-warning {
-    color: rgb(141, 37, 46);
+    color: var(--mat-sys-error, rgb(141, 37, 46));
     text-align: center;
   }
 
   .q-ruleset {
-    border: 1px solid #CCC;
+    border: 1px solid var(--mat-sys-outline-variant, #CCC);
   }
 
   .q-rule {
-    border: 1px solid #CCC;
-    background: white;
+    border: 1px solid var(--mat-sys-outline-variant, #CCC);
+    background: var(--mat-sys-surface-container, white);
   }
 
   .q-transition {
@@ -182,6 +183,9 @@
   .q-row {
     padding: 6px 8px;
     margin-top: 6px;
+    > * {
+      vertical-align: top;
+    }
   }
 
   .q-connector {
@@ -200,7 +204,7 @@
     &::before, &::after {
       content: '';
       left: -12px;
-      border-color: #CCC;
+      border-color: var(--mat-sys-outline-variant, #CCC);
       border-style: solid;
       width: 9px;
       height: calc(50% + 6px);
