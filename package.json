@@ -1,6 +1,6 @@
 {
   "name": "shout-angular-query-builder",
-  "version": "0.8.0",
+  "version": "0.19.0",
   "description": "A modernized Angular 16+ query builder based on jquery QueryBuilder",
   "module": "./dist/shout-angular-query-builder/fesm2022/shout-angular-query-builder.mjs",
   "typings": "./dist/shout-angular-query-builder/index.d.ts",
