@@ -5,6 +5,7 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "esModuleInterop": true,
+    "preserveSymlinks": true,
     "declaration": false,
     "module": "esnext",
     "moduleResolution": "node",

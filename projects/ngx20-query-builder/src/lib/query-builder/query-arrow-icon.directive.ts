@@ -1,9 +1,9 @@
 import { Directive, TemplateRef } from '@angular/core';
 
 @Directive({
-    selector: '[queryArrowIcon]',
-    standalone: false
+  selector: '[queryArrowIcon]',
+  standalone: false
 })
 export class QueryArrowIconDirective {
-    constructor(public template: TemplateRef<any>) {}
+  constructor(public template: TemplateRef<any>) { }
 }

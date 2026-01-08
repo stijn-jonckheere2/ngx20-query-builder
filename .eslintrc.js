@@ -87,7 +87,7 @@ module.exports = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/indent": [
             "error",
-            4,
+            2,
             {
                 "FunctionDeclaration": {
                     "parameters": "first"
@@ -386,5 +386,16 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    "overrides": [
+        {
+            "files": [
+                "demo/**/*.ts"
+            ],
+            "parserOptions": {
+                "project": "demo/tsconfig.json",
+                "sourceType": "module"
+            }
+        }
+    ]
 };
