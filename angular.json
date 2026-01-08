@@ -32,7 +32,7 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "eslintConfig": ".eslintrc.js",
-            "lintFilePatterns": ["**/*.spec.ts", "**/*.ts"]
+            "lintFilePatterns": ["projects/ngx20-query-builder/**/*.ts"]
           }
         }
       }

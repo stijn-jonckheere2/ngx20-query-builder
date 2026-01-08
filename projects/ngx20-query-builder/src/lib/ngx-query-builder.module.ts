@@ -14,30 +14,30 @@ import { QueryRemoveButtonDirective } from './query-builder/query-remove-button.
 import { QuerySwitchGroupDirective } from './query-builder/query-switch-group.directive';
 
 @NgModule({
-    imports: [CommonModule, FormsModule],
-    declarations: [
-        QueryBuilderComponent,
-        QueryInputDirective,
-        QueryOperatorDirective,
-        QueryFieldDirective,
-        QueryEntityDirective,
-        QueryButtonGroupDirective,
-        QuerySwitchGroupDirective,
-        QueryRemoveButtonDirective,
-        QueryEmptyWarningDirective,
-        QueryArrowIconDirective
-    ],
-    exports: [
-        QueryBuilderComponent,
-        QueryInputDirective,
-        QueryOperatorDirective,
-        QueryFieldDirective,
-        QueryEntityDirective,
-        QueryButtonGroupDirective,
-        QuerySwitchGroupDirective,
-        QueryRemoveButtonDirective,
-        QueryEmptyWarningDirective,
-        QueryArrowIconDirective
-    ]
+  imports: [CommonModule, FormsModule],
+  declarations: [
+    QueryBuilderComponent,
+    QueryInputDirective,
+    QueryOperatorDirective,
+    QueryFieldDirective,
+    QueryEntityDirective,
+    QueryButtonGroupDirective,
+    QuerySwitchGroupDirective,
+    QueryRemoveButtonDirective,
+    QueryEmptyWarningDirective,
+    QueryArrowIconDirective
+  ],
+  exports: [
+    QueryBuilderComponent,
+    QueryInputDirective,
+    QueryOperatorDirective,
+    QueryFieldDirective,
+    QueryEntityDirective,
+    QueryButtonGroupDirective,
+    QuerySwitchGroupDirective,
+    QueryRemoveButtonDirective,
+    QueryEmptyWarningDirective,
+    QueryArrowIconDirective
+  ]
 })
 export class NgxQueryBuilderModule { }

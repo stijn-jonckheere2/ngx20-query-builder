@@ -319,14 +319,14 @@ export class QueryBuilderComponent implements OnInit, OnChanges, ControlValueAcc
 
     const type = this.config.fields[field].type;
     switch (operator) {
-      case 'is null':
-      case 'is not null':
-        return null;  // No displayed component
-      case 'in':
-      case 'not in':
-        return type === 'category' || type === 'boolean' ? 'multiselect' : type;
-      default:
-        return type;
+    case 'is null':
+    case 'is not null':
+      return null;  // No displayed component
+    case 'in':
+    case 'not in':
+      return type === 'category' || type === 'boolean' ? 'multiselect' : type;
+    default:
+      return type;
     }
   }
 
@@ -578,10 +578,10 @@ export class QueryBuilderComponent implements OnInit, OnChanges, ControlValueAcc
 
   getDefaultValue(defaultValue: any): any {
     switch (typeof defaultValue) {
-      case 'function':
-        return (defaultValue as (() => any))();
-      default:
-        return defaultValue;
+    case 'function':
+      return (defaultValue as (() => any))();
+    default:
+      return defaultValue;
     }
   }
 

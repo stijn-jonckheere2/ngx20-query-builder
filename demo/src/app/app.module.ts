@@ -15,6 +15,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { MatCardModule } from '@angular/material/card';
     ReactiveFormsModule,
     NoopAnimationsModule,
     MatButtonModule,
+    MatDividerModule,
     MatCheckboxModule,
     MatSelectModule,
     MatInputModule,
