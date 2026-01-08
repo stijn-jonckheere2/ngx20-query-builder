@@ -1,24 +1,38 @@
-# Angular2QueryBuilder
+# ngx20-query-builder
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+Angular query builder library (rules + nested rulesets) for Angular 20+.
 
-## Code scaffolding
+## Credits / Origin
 
-Run `ng generate component component-name --project angular2-query-builder` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular2-query-builder`.
-> Note: Don't forget to add `--project angular2-query-builder` or else it will be added to the default project in your `angular.json` file. 
+This project is a modernized fork of:
+- `angular2-query-builder` on npm: https://www.npmjs.com/package/angular2-query-builder
+- Upstream repository: https://github.com/zebzhao/Angular-QueryBuilder
+
+## Requirements
+
+- Angular `>=20 <21`
+- RxJS `>=7.8 <8`
 
 ## Build
 
-Run `ng build angular2-query-builder` to build the project. The build artifacts will be stored in the `dist/` directory.
+From the repo root:
 
-## Publishing
+```bash
+npm run build
+```
 
-After building your library with `ng build angular2-query-builder`, go to the dist folder `cd dist/angular2-query-builder` and run `npm publish`.
+## Run the demo
 
-## Running unit tests
+From the repo root:
 
-Run `ng test angular2-query-builder` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm run demo:start
+```
 
-## Further help
+## Publish
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+From the repo root:
+
+```bash
+npm run publish:npm
+```

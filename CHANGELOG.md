@@ -1,6 +1,10 @@
 Angular2-QueryBuilder Changelog
 ===============
 
+Version 1.0.0
+-----------
+- Breaking: Renamed exported module to `NgxQueryBuilderModule` and removed legacy `angular2-query-builder.module` entry point.
+
 Version 0.5.0
 -----------
 - Upgrade to Angular 8
