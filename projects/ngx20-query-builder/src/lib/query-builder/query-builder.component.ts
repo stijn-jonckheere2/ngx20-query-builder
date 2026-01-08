@@ -634,6 +634,14 @@ export class QueryBuilderComponent implements OnInit, OnChanges, ControlValueAcc
         return cls;
     }
 
+    isRuleSet(rule: Rule | RuleSet): rule is RuleSet {
+        return (rule as RuleSet).rules !== undefined;
+    }
+
+    isInvalidRuleSet(rule: Rule | RuleSet): boolean {
+        return !this.config?.allowEmptyRulesets && this.isRuleSet(rule) && rule.rules.length === 0;
+    }
+
     getButtonGroupContext(): ButtonGroupContext {
         if (!this.buttonGroupContext) {
             this.buttonGroupContext = {

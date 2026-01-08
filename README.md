@@ -9,7 +9,7 @@ components and provides a flexible way to handle custom data types.
 ## Install
 Angular 16
 
-`npm install shout-angular-query-builder`
+`npm install ngx20-query-builder`
 
 ## Legacy Install
 

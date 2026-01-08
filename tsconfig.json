@@ -17,9 +17,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "lib": [
-      "es5",
-      "es6",
-      "dom"
+      "ES2022",
+      "DOM"
     ],
     "baseUrl": "./",
     "importHelpers": true,

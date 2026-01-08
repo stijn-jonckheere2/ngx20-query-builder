@@ -1,6 +1,6 @@
 import { UntypedFormBuilder, UntypedFormControl } from '@angular/forms';
 import { Component } from '@angular/core';
-import { QueryBuilderClassNames, QueryBuilderConfig } from 'shout-angular-query-builder';
+import { QueryBuilderClassNames, QueryBuilderConfig } from 'ngx20-query-builder';
 
 @Component({
     selector: 'app-root',
